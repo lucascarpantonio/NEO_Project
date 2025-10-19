@@ -2,17 +2,16 @@ name: Notify Blog on Project Update
 
 on:
   push:
-    branches:
-      - blog
+    branches: [ blog ]
 
 jobs:
   notify-blog:
     runs-on: ubuntu-latest
     steps:
-      - name: Send repository_dispatch to blog
+      - name: Trigger blog repository
         uses: peter-evans/repository-dispatch@v2
         with:
-          token: ${{ secrets.BLOG_PAT }}
+          token: ${{ secrets.BLOG_TRIGGER_TOKEN }}   # <— deve esistere in NEO_Project
           repository: lucascarpantonio/lucascarpantonio.github.io
           event-type: update_project
           client-payload: |
