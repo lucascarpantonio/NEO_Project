@@ -1,0 +1,11 @@
+- name: Explore Close Approaches of Near-Earth Objects
+  description: |
+    Analysis and visualization of close approaches of Near-Earth Objects (NEOs)
+    using NASA/JPL datasets. The project implements a Python command-line tool
+    that allows users to query, filter, and save data about asteroids and comets
+    approaching Earth. It supports interactive queries and output in both CSV
+    and JSON formats, following an object-oriented design.
+  url: https://github.com/lucascarpantonio/Explore-NEOs
+  tags: [python, data-analysis, nasa, astronomy, csv, json, cli, oop]
+  notebook: analysis.ipynb
+  image: https://upload.wikimedia.org/wikipedia/commons/1/1e/2018_VG18_Discovery_Images_-_Subaru_Telescope.png
